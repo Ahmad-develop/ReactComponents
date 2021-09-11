@@ -1,0 +1,48 @@
+.heading {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2.4rem;
+}
+
+.todolist {
+  max-width: 400px;
+  margin: 80px auto;
+  overflow: auto;
+  border-radius: 5px;
+  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.11);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.wrapper {
+  width: inherit;
+  background-color: white;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #efe5fd;
+  position: relative;
+}
+
+.propsContainer {
+  margin-left: 1rem;
+  font-weight: 900;
+}
+
+.time {
+  font-size: 0.85rem;
+  color: #aaaaaa;
+}
+
+.delButton {
+  position: absolute;
+  right: 30px;
+  color: red;
+  cursor: pointer;
+  transform: scale(0.95);
+  transition: transform 0.35s;
+}
+
+.delButton:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=todoList.css.map */
