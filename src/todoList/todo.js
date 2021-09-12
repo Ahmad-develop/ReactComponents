@@ -24,7 +24,9 @@ class TodoList extends Component {
                 }
                 return todo
             })
-            return updateState
+            return {
+                todos : updateState
+            }
         })
     }
     

@@ -5,37 +5,30 @@ import "./todoList.css"
 
 
 
-class Temp extends Component{
-    constructor(props){
-        super(props)
-        this.state = {
-            todos_: TodoData
-        }
-    }
-
-    render(){
+const Temp =(props)=>{
 
         return(
 
             <div className="wrapper" > 
 
-                <input type="checkbox" checked={this.props.TodoData.status}/>
+                <input type="checkbox" 
+                checked={props.TodoData.status}
+                onChange={()=> props.handleChange(props.TodoData.id)}/>
                 
                 <div className="propsContainer">
                     <div>
-                        {this.props.TodoData.todo}
+                        {props.TodoData.todo}
                     </div>
                     <div className="time">
-                        {this.props.TodoData.limitedTime}
+                        {props.TodoData.limitedTime}
                     </div>
                 </div>
 
-                <DeleteOutlinedIcon className="delButton" onClick={this.deletion} />
+                <DeleteOutlinedIcon className="delButton"/>
                     
             </div>
 
         )
-    }
 }
 
 
